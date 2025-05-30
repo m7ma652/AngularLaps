@@ -1,0 +1,43 @@
+img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    border-radius: 20px;
+    object-fit: cover;
+    margin: 20px 0;
+}
+
+.infinite-animation {
+    animation: infiniteFade 4s ease-in-out infinite;
+}
+
+.infinite-animation-delay {
+    animation: infiniteFade 4s ease-in-out 2s infinite;
+}
+
+@keyframes infiniteFade {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    25% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    75% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+}
