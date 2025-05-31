@@ -1,0 +1,7 @@
+<div class="container">
+    <h2>Users</h2>
+    <app-search-input (onSearch)="handleSearch($event)"></app-search-input>
+    <div class="cards">
+        <app-users-card [searchEmail]="search"></app-users-card>
+    </div>
+</div>

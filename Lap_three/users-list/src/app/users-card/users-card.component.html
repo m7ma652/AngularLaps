@@ -1,0 +1,14 @@
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
+    @for (user of filteredUsers; track user.id) {
+    <ng-container>
+        <p-card [style]="{ width: '22rem', overflow: 'hidden' }">
+            <ng-template pTemplate="header">
+                <img [src]="user.image" alt="User" class="w-full h-48 object-cover" />
+            </ng-template>
+            <ng-template pTemplate="title">{{ user.username }}</ng-template>
+            <ng-template pTemplate="subtitle">{{ user.email }}</ng-template>
+            <p>{{ user.phone }}</p>
+        </p-card>
+    </ng-container>
+    }
+</div>
